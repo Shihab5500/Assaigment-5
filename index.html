@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Assignment 5</title>
+</head>
+<body class="bg-[#f5fff6]">
+
+  <!-- navbar -->
+
+
+  <div class="h-[100px] flex justify-between items-center px-4 sm:px-[60px] mx-auto">
+    <div class="flex items-center sm:gap-[20px]">
+      <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="logo">
+      <h1 class="text-[#006747] font-bold leading-tight">
+        Emergency <br> Service
+      </h1>
+    </div>
+
+    <div class="flex gap-[15px] sm:gap-[25px]">
+      <div class="flex items-center gap-[5px] bg-[#41ff6b1a] px-3 sm:px-[20px] rounded-[50px]">
+        <p id="available-heart" class="font-bold">0</p>
+        <img class="w-[25px] sm:w-[30px] h-[25px] sm:h-[30px]" src="assets/heart.png" alt="heart">
+      </div>
+      <div class="flex items-center gap-[5px] bg-[#41ff6b1a] px-3 sm:px-[20px] rounded-[50px]">
+        <p id="available-coin" class="font-bold">100</p>
+        <img class="w-[20px] sm:w-[24px] h-[20px] sm:h-[24px]" src="assets/coin.png" alt="coin">
+      </div>
+      <button id="available-copy" class="bg-[#00a63e] text-white py-[10px] px-[25px] sm:py-[12px] sm:px-[36px] rounded-[50px] font-bold text-sm sm:text-base">
+        0 Copy
+      </button>
+    </div>
+  </div>
+
+
+  <!-- /navbar -->
+
+
+  <!-- banner -->
+
+
+  <div class="bg-gradient-to-l from-[#006747] to-[#013223] py-[21px] mx-auto text-center">
+    <img class="w-[70px] sm:w-[92px] h-[70px] sm:h-[92px] mx-auto" src="assets/logo.png" alt="gov">
+    <div class="text-white sm:mt-[20px] mt-[10px] px-3">
+      <h1 class="font-bold text-2xl sm:text-[40px]">Emergency Service Directory</h1>
+      <p class="text-sm sm:text-base">
+        Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+  </div>
+
+
+  <!-- /banner -->
+
+
+
+  <!-- main -->
+
+
+  <div class="lg:flex bg-[#f5fff6] w-full gap-[30px] lg:gap-[50px] pt-[30px] px-3 sm:px-[30px] md:pl-[60px] lg:pl-[120px] mb-[50px]">
+
+    <!-- cards grid -->
+    <div class="w-full max-w-[1200px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[50px]">
+
+
+
+      <!-- 1 National Emergency -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/emergency.png" alt="emergency">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">National Emergency Number</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">National Emergency</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">999</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button id="click-copy-btn" class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px] h-[14px] sm:h-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px] h-[14px] sm:h-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- 2 Police -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/police.png" alt="police">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">Police Helpline Number</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">Police</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">999</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div id="click-copy-btn" class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn2" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- 3 Fire Service -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/fire-service.png" alt="fire">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">Fire Service Number</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">Fire Service</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">999</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button id="click-copy-btn" class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn3" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- 4 Ambulance -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/ambulance.png" alt="ambulance">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">Ambulance Service</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">Ambulance</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">1994-999999</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button id="click-copy-btn" class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn4" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- 5 Women & Child -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/emergency.png" alt="women child">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">Women & Child Helpline</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">Women & Child Helpline</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">109</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button id="click-copy-btn" class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn5" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- 6 Anti-Corruption -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/emergency.png" alt="anti corruption">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">Anti-Corruption Helpline</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">Anti-Corruption</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">106</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button id="click-copy-btn" class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn6" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- 7 Electricity -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/emergency.png" alt="electricity">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">Electricity Helpline</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">Electricity Outage</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">16216</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button id="click-copy-btn" class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn7" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- 8 BRAC -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/emergency.png" alt="brac">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">Brac Helpline</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">Brac</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">16445</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button id="click-copy-btn" class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn8" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+
+
+      <!-- 9 Bangladesh Railway -->
+
+
+      <div class="border-2 border-gray-200 rounded-[12px] w-full sm:w-[370px] bg-white pt-[20px] sm:pt-[40px] h-auto sm:h-[300px]">
+        <div class="flex justify-between items-center px-[20px] pb-[10px]">
+          <img class="w-[32px] h-[32px] bg-[#f5cccb] rounded-lg" src="assets/emergency.png" alt="railway">
+          <img id="love-click" class="w-[24px] h-[24px]" src="assets/heart-main.png" alt="fav">
+        </div>
+        <div class="pl-[10px]">
+          <h1 class="font-bold text-[18px] sm:text-[20px]">Bangladesh Railway Helpline</h1>
+          <p class="text-[16px] sm:text-[18px] text-[#5c5c5c]">Bangladesh Railway</p>
+        </div>
+        <div class="pl-[10px] mt-[10px]">
+          <h1 id="copy-number" class="font-bold text-[22px] sm:text-[25px]">163</h1>
+          <p class="bg-[#c9c4c4] w-[40px] sm:w-[50px] text-center rounded-[40px] text-white text-xs sm:text-sm">All</p>
+        </div>
+        <div class="flex justify-center gap-[10px] sm:gap-[20px] mt-[15px] sm:mt-[20px]">
+          <button id="click-copy-btn" class="flex items-center bg-[#f4f7f7] px-[30px] sm:px-[55px] py-[8px] rounded-[10px] gap-[6px] text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/copy-icon.png" alt="copy"> Copy
+          </button>
+          <button id="call-btn9" class="flex items-center bg-[#00a63e] px-[30px] sm:px-[55px] py-[8px] sm:py-[10px] rounded-[10px] gap-[6px] text-white text-sm sm:text-base">
+            <img class="w-[14px] sm:w-[16px]" src="assets/telephone.png" alt="call"> Call
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    
+     <!--  History -->
+
+
+    <div class="border-2 border-gray-200 rounded-[12px] w-full lg:w-[400px] bg-white mt-[30px] lg:mt-0 p-[20px]">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-[7px]">
+          <img class="w-[24px] h-[24px]" src="assets/history.png" alt="">
+          <h1 class="text-[18px] sm:text-[20px] font-bold">Call History</h1>
+        </div>
+        <button id="clear-btn" class="bg-[#00a63e] text-white px-[15px] sm:px-[20px] py-[8px] sm:py-[10px] rounded-[40px] text-sm sm:text-base">Clear</button>
+      </div>
+
+      <div id="call-history" class="mt-[20px] space-y-[15px]">
+        
+        <div class="rounded-[12px] bg-[#eae7e7] p-[10px] flex justify-between items-center">
+          <div>
+            <h1 class="font-bold">Fire Service Number</h1>
+            <p class="text-[#5c5c5c]">999</p>
+          </div>
+          <p class="text-xs sm:text-sm">11:36:58 AM</p>
+        </div>
+
+        <div class="rounded-[12px] bg-[#eae7e7] p-[10px] flex justify-between items-center">
+          <div>
+            <h1 class="font-bold">Fire Service Number</h1>
+            <p class="text-[#5c5c5c]">999</p>
+          </div>
+          <p class="text-xs sm:text-sm">11:36:58 AM</p>
+        </div>
+
+        <div class="rounded-[12px] bg-[#eae7e7] p-[10px] flex justify-between items-center">
+          <div>
+            <h1 class="font-bold">Fire Service Number</h1>
+            <p class="text-[#5c5c5c]">999</p>
+          </div>
+          <p class="text-xs sm:text-sm">11:36:58 AM</p>
+        </div>
+
+        <div class="rounded-[12px] bg-[#eae7e7] p-[10px] flex justify-between items-center">
+          <div>
+            <h1 class="font-bold">Fire Service Number</h1>
+            <p class="text-[#5c5c5c]">999</p>
+          </div>
+          <p class="text-xs sm:text-sm">11:36:58 AM</p>
+        </div>
+
+        <div class="rounded-[12px] bg-[#eae7e7] p-[10px] flex justify-between items-center">
+          <div>
+            <h1 class="font-bold">Fire Service Number</h1>
+            <p class="text-[#5c5c5c]">999</p>
+          </div>
+          <p class="text-xs sm:text-sm">11:36:58 AM</p>
+        </div>
+
+        <div class="rounded-[12px] bg-[#eae7e7] p-[10px] flex justify-between items-center">
+          <div>
+            <h1 class="font-bold">Fire Service Number</h1>
+            <p class="text-[#5c5c5c]">999</p>
+          </div>
+          <p class="text-xs sm:text-sm">11:36:58 AM</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./function.js"></script>
+
+</body>
+</html>
