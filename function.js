@@ -423,38 +423,42 @@ const amount = 20;
 
 
 
-  
 
 // copy add
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  let count = 0;
+  const avail = document.getElementById("available-copy");
 
-  let copyCount = 0;
+  document.addEventListener("click", async (e) => {
+    const btn = e.target.closest(".click-copy-btn");
+    if (!btn) return;
 
- 
-  const availableCopyBtn = document.getElementById("available-copy");
+    let box = btn;
+    while (box && !box.querySelector(".copy-number")) box = box.parentElement;
 
+    const numEl = box?.querySelector(".copy-number");
+    if (!numEl) return;
 
-  document.querySelectorAll('#click-copy-btn').forEach(btn => {
-    btn.addEventListener("click", function () {
-      
-      const card = this.closest("div.border-2");
-      const numEl = card.querySelector('#copy-number');
-      const number = numEl ? numEl.textContent.trim() : "";
+    const num = numEl.textContent.trim();
+    try { await navigator.clipboard.writeText(num); } catch {}
 
-      if (number) {
-        
-        copyCount++;
-        availableCopyBtn.textContent = copyCount + " Copy";
-
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-         navigator.clipboard.writeText(number).catch(() => {});
-       }
-
-        
-        alert("নাম্বার কপি হয়েছে : " + number);
-      }
-    });
+    avail.textContent = `${++count} Copy`;
+    alert(`নাম্বার কপি হয়েছে : ${num}`);
   });
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
